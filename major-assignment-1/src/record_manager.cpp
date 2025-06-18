@@ -73,6 +73,8 @@ bool RecordManager::saveRecords() {
 }
 
 void RecordManager::displayRecords() {
+    cout << endl;
+    cout << "--------------------------------------------------" << endl;
     cout << left << setw(10) << "ID"
               << setw(25) << "Name"
               << setw(10) << "Average"

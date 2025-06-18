@@ -35,7 +35,6 @@ int main() {
         switch (choice) {
             case 1:
                 // display all records
-                cout << "\n--- Student Records ---\n";
                 manager.displayRecords();
                 break;
                 
