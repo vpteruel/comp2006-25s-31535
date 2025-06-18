@@ -1,4 +1,4 @@
-1001,Alice Smith,85,88,82
-1002,Bob Taylor,92,94,90
-1003,Charlie Brown,78,81,76
-1004,Vinicius,93,89,91
+1,Vinicius Teruel,92,94,90
+2,Joanne Douglas,78,81,76
+3,Herbert Sanders,85,88,82
+4,Nilda Cooke,93,89,91
