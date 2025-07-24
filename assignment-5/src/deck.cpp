@@ -7,7 +7,7 @@
 using namespace std;
 
 Deck::Deck() {
-    // initialize a standard 52-card deck
+    // Initialize a standard 52-card deck
     string ranks[] = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"};
     string suits[] = {"Clubs", "Diamonds", "Hearts", "Spades"};
 
