@@ -1,4 +1,5 @@
 #include <iostream>
+#include <limits>
 
 #include "../include/library_system.h"
 
@@ -9,7 +10,21 @@ int main() {
     int choice;
     
     do {
-        cout << "\n===== LIBRARY MANAGEMENT SYSTEM =====" << endl;
+
+        // Check for failed input, such as entering a letter instead of a number
+        if (cin.fail()) {
+            cin.clear(); // Clear the error flag
+            cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Discard the bad input
+            choice = 0; // Reset choice to continue the loop
+            continue; // Skip the rest of the loop and show the menu again
+        }
+
+        // Clear the rest of the line from the input buffer
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+        // Display menu options
+        cout << endl;
+        cout << "===== LIBRARY MANAGEMENT SYSTEM =====" << endl;
         cout << "1. Add a new Book" << endl;
         cout << "2. Add a new DVD" << endl;
         cout << "3. Display all Books" << endl;

@@ -1,4 +1,5 @@
 #include "../include/library_item.h"
+#include <limits>
 
 using namespace std;
 
@@ -34,11 +35,9 @@ void LibraryItem::setItemID(int id) {
 }
 
 void LibraryItem::inputDetails() {
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
     cout << "Enter title: ";
-    cin.ignore();
     getline(cin, title);
     cout << "Enter author/creator: ";
     getline(cin, author);
-    cout << "Enter item ID: ";
-    cin >> itemID;
 }
